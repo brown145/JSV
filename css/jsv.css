@@ -1,0 +1,123 @@
+/* ********* */
+/* CSS RESET */
+/* ********* */
+#jsv-container html, #jsv-container body, #jsv-container div, #jsv-container span, 
+#jsv-container h1, #jsv-container h2, #jsv-container h3, #jsv-container h4, 
+#jsv-container h5, #jsv-container h6, #jsv-container p, #jsv-container blockquote, 
+#jsv-container a, #jsv-container code, #jsv-container em, #jsv-container img, 
+#jsv-container strong, #jsv-container dl, #jsv-container dt, #jsv-container dd, 
+#jsv-container ol, #jsv-container ul, #jsv-container li, #jsv-container table, 
+#jsv-container tbody, #jsv-container tfoot, #jsv-container thead, #jsv-container tr, 
+#jsv-container th, #jsv-container td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	color:black;
+}
+#jsv-container ol, #jsv-container ul {
+	list-style: none;
+}
+#jsv-container table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+#jsv-container {
+  text-align: left;
+  background: white;
+}
+
+
+/* ******* */
+/* APP CSS */
+/* ******* */
+#jsv-container strong {
+  font-weight: bold;
+}
+#jsv-container a {
+  color: #a00;
+  cursor:pointer;
+  font-size:12px;
+  padding:0 3px;
+}
+#jsv-container a:hover {
+  color: #e00;
+  text-decoration:none;
+}
+
+/* header styles */
+#jsv-container #jsv-status {
+  border-bottom: 2px solid black;
+  padding: 5px 2px;
+}
+#jsv-status h1 {
+  font-size: 20px;
+  line-height: 34px;
+  margin-bottom: 2px;
+}
+
+/* master list styles */
+#jsv-container #jsv-master {
+}
+#jsv-master .items li{
+  font-size:14px;
+  line-height:18px;
+  padding:2px 10px;
+  border-bottom: 1px solid #EEE;
+}
+#jsv-master .items li:hover{
+  cursor:pointer;
+  background:#efefee;
+}
+#jsv-master .items li.active{
+  background:#ffd;
+}
+
+#jsv-master .items .jsv-context-master-deleteLog{
+  float:right;
+}
+
+/* detail pane styles */
+#jsv-container #jsv-detail{
+  border-top:2px solid black;
+  
+}
+#jsv-detail h1 {
+  font-size: 20px;
+  line-height: 34px;
+  background: #EFEFEF;
+  padding-left:15px;
+  margin-bottom: 6px;
+}
+#jsv-detail .timestamp {
+  float: right;
+  padding-right: 15px;
+}
+#jsv-detail ul {
+  padding-left: 20px;
+}
+#jsv-detail h2 {
+  font-size: 14px;
+  line-height: 18px;
+  padding-top: 7px;
+  font-weight: bold;
+}
+#jsv-detail table.requestDetails {
+  margin: 5px 10px;
+  display:none;
+}
+#jsv-detail thead th {
+  background: black;
+  color: white;
+  padding: 6px 1px;
+  font-weight: bold;
+  width:25%;
+}
+#jsv-detail table tr td {
+  padding: 2px;
+}
+#jsv-detail tbody tr:nth-child(even) { background-color:#eee; }
+#jsv-detail tbody tr:nth-child(odd) { background-color:#fff; }
